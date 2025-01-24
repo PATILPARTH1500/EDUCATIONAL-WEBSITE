@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Sterling Academy</title>
+  <meta name="title" content="Sterling-Academy">
+  <meta name="description" content="This is an education HTML template made by Parth Patil">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/svg+xml">
+
+  <!-- 
+    - custom font link
+  -->
+  <link rel="stylesheet" href="./assets/font/font.css">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-bg.png">
+
+  <style>
+    /* Slider Styles */
+    .slider {
+        position: relative;
+    width: 30%;
+    margin: 155px auto;
+    overflow: hidden;
+    border: 5px solid #000000;
+    border-radius: 10px;
+    background-color: #ffffff;
+    }
+
+    .slider-frame {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slider-image {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .slider-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(255, 255, 255, 0.7);
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      z-index: 1;
+    }
+
+    .slider-button.prev {
+      left: 10px;
+    }
+
+    .slider-button.next {
+      right: 10px;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      .slider {
+        width: 95%;
+      }
+    }
+  </style>
+
+</head>
+
+<body style="background-image: url('./assets/images/category-bg.png');">
+
+  <!-- 
+    - PRELOADER
+  -->
+
+  <div class="preloader" data-preloader>
+    <div class="circle" data-circle></div>
+  </div>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+      <img src="/assets/images/logo.png" alt="" srcset="" style="height: 40px;">
+      <span style="color:black;font-size:xx-large;font-weight: 750;font-family:Georgia, 'Times New Roman', Times, serif;">Sterling Academy</span>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <span style="color:black;font-size:xx-large;font-weight: 750;font-family:Georgia, 'Times New Roman', Times, serif;">Sterling Academy</span>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link title-sm" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="about-us.html" class="navbar-link title-sm" data-nav-link>About Us</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="course.html" class="navbar-link title-sm" data-nav-link>Courses</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="placement.html" class="navbar-link title-sm" data-nav-link>Placements</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="gallery.html" class="navbar-link title-sm" data-nav-link>Gallery</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="blog.html" class="navbar-link title-sm" data-nav-link>Blog</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <a href="contact-us.html" class="btn btn-secondary">Contact Us</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-overlay data-nav-toggler></div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- Image Slider -->
+    <div class="slider">
+      <div class="slider-frame">
+        <img src="./assets/images/1.jpeg" alt="Slide 1" class="slider-image">
+        <img src="./assets/images/2.jpeg" alt="Slide 2" class="slider-image">
+        <img src="./assets/images/3.jpeg" alt="Slide 3" class="slider-image">
+        <img src="./assets/images/4.jpeg" alt="Slide 3" class="slider-image">
+        <img src="./assets/images/5.jpeg" alt="Slide 3" class="slider-image">
+      </div>
+      <button class="slider-button prev" aria-label="Previous Slide">&lt;</button>
+      <button class="slider-button next" aria-label="Next Slide">&gt;</button>
+    </div>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <span style="color:black;font-size:xx-large;font-weight: 750;font-family:Georgia, 'Times New Roman', Times, serif;">Sterling Academy</span>
+
+          <p class="title-sm footer-text">
+            By deepening your understanding, you not only enhance your professional capabilities but also position yourself as a valuable asset in a rapidly evolving global industry.
+          </p>
+
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <img src="./assets/images/facebook.svg" width="40" height="40" loading="lazy" alt="facebook">
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <img src="./assets/images/twitter.svg" width="40" height="40" loading="lazy" alt="twitter">
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <img src="./assets/images/pinterest.svg" width="40" height="40" loading="lazy" alt="pinterest">
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <img src="./assets/images/instagram.svg" width="40" height="40" loading="lazy" alt="instagram">
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+          <li>
+            <p class="headline-sm footer-list-title">Links</p>
+          </li>
+          <li>
+            <a href="#" class="title-sm footer-link">Home</a>
+          </li>
+          <li>
+            <a href="#" class="title-sm footer-link">About Us</a>
+          </li>
+          <li>
+            <a href="#" class="title-sm footer-link">Pricing</a>
+          </li>
+          <li>
+            <a href="#" class="title-sm footer-link">Courses</a>
+          </li>
+          <li>
+            <a href="#" class="title-sm footer-link">Contact Us</a>
+          </li>
+          <li>
+            <a href="#" class="title-sm footer-link">Blog</a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <p class="headline-sm footer-list-title">Legal</p>
+          </li>
+          <li>
+            <a href="#" class="title-sm footer-link">Legal</a>
+          </li>
+          <li>
+            <a href="#" class="title-sm footer-link">Terms of Use</a>
+          </li>
+          <li>
+            <a href="#" class="title-sm footer-link">Term & Condition</a>
+          </li>
+          <li>
+            <a href="#" class="title-sm footer-link">Payment Method</a>
+          </li>
+          <li>
+            <a href="#" class="title-sm footer-link">Privacy Policy</a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <p class="headline-sm footer-list-title">Instagram Post</p>
+            <ul class="grid-list">
+              <li>
+                <img src="./assets/images/ins-1.png" width="80" height="80" loading="lazy" alt="instagram post" class="img-cover">
+              </li>
+              <li>
+                <img src="./assets/images/ins-2.png" width="80" height="80" loading="lazy" alt="instagram post" class="img-cover">
+              </li>
+              <li>
+                <img src="./assets/images/ins-3.png" width="80" height="80" loading="lazy" alt="instagram post" class="img-cover">
+              </li>
+              <li>
+                <img src="./assets/images/ins-4.png" width="80" height="80" loading="lazy" alt="instagram post" class="img-cover">
+              </li>
+              <li>
+                <img src="./assets/images/ins-5.png" width="80" height="80" loading="lazy" alt="instagram post" class="img-cover">
+              </li>
+              <li>
+                <img src="./assets/images/ins-6.png" width="80" height="80" loading="lazy" alt="instagram post" class="img-cover">
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+          © Copyright 2025 | All Rights Reserved by Sterling-Academy
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- 
+   - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    // Image Slider Script
+    const sliderFrame = document.querySelector('.slider-frame');
+    const slides = document.querySelectorAll('.slider-image');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      if (index < 0) {
+        currentIndex = slides.length - 1;
+      } else if (index >= slides.length) {
+        currentIndex = 0;
+      }
+      const offset = -currentIndex * 100;
+      sliderFrame.style.transform = `translateX(${offset}%)`;
+    }
+
+    prevButton.addEventListener('click', () => {
+      currentIndex--;
+      showSlide(currentIndex);
+    });
+
+    nextButton.addEventListener('click', () => {
+      currentIndex++;
+      showSlide(currentIndex);
+    });
+
+    // Automatically show the next slide every 5 seconds
+    setInterval(() => {
+      currentIndex++;
+      showSlide(currentIndex);
+    }, 5000);
+  </script>
+
+</body>
+
+</html>
