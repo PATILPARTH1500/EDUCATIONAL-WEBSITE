@@ -158,6 +158,9 @@
   </header>
 
   <main>
+    <h2 class="headline-md text-center section-title" style="position:relative;top:140px;">
+      Our Training Session<span class="span has-after">Highlights</span>
+   </h2>
     <!-- Image Slider -->
     <div class="slider">
       <div class="slider-frame">
@@ -299,7 +302,14 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
+  <script>
+    var wa_btnSetting = {"btnColor":"#16BE45","ctaText":"WhatsApp Us","cornerRadius":40,"marginBottom":20,"marginLeft":20,"marginRight":20,"btnPosition":"right","whatsAppNumber":"917400488041","welcomeMessage":"Hello","zIndex":999999,"btnColorScheme":"light"};
+    var wa_widgetSetting = {"title":"Sterling Academy","subTitle":"Shipping  & Logistics Academy","headerBackgroundColor":"#29612c","headerColorScheme":"light","greetingText":"Hi there! \nHow can I help you?","ctaText":"Start Chat","btnColor":"#00fa2a","cornerRadius":40,"welcomeMessage":"Hello","btnColorScheme":"light","brandImage":"","darkHeaderColorScheme":{"title":"#333333","subTitle":"#4F4F4F"}};  
+    window.onload = () => {
+      _waEmbed(wa_btnSetting, wa_widgetSetting);
+    };
+  </script>
   <script>
     // Image Slider Script
     const sliderFrame = document.querySelector('.slider-frame');
