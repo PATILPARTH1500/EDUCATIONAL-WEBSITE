@@ -55,9 +55,8 @@
     header {
       position: sticky;
       top: 0;
-      background-color: #fff;
+      background-color:transparent;
       z-index: 10;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       padding: 10px 20px;
     }
 
@@ -80,7 +79,7 @@
     .text-section {
       flex: 0 0 30%;
       padding: 20px;
-      background-color: #ffe9a1;
+      background-color: #eafafc;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -236,9 +235,17 @@
         <h2>Sterling Academy Logistics Course Preview</h2>
         <p>Enhance your knowledge and skillset with our wide range of courses, expert mentors, and hands-on learning opportunities.</p>
         <p>By exploring and deepening your understanding, you can become a leader in your chosen field. Join us today and step into a brighter future.</p>
-        <button class="btn" style="background-color: rgb(216, 248, 248);color:black">View More</button>
-      </div>
+        <div class="rating-wrapper">
+          <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="" style="display: inline-block;">
+          <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="" style="display: inline-block;">
+          <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="" style="display: inline-block;">
+          <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="" style="display: inline-block;">
+          <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="" style="display: inline-block;">
+        </div>
+        <button class="btn" style="background-color: rgb(255, 211, 116);color:black">View More</button>
 
+      </div>
+  
       <!-- Video Section -->
       <div class="video-section">
         <video src="/assets/images/hero.mp4" autoplay controls loop></video>
