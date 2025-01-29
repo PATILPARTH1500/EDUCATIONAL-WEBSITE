@@ -463,9 +463,9 @@ body.nav-active { overflow: hidden; }
 }
 
 .category-card:is(:hover, :focus-within) { border-color: var(--light-coral);
-background-color: var(--selective-yellow);
+background-color: rgb(255, 255, 156);
 margin: 1.2px;
-transition:1.5s ease}
+transition:0.5s ease}
 
 .category-card .title-sm { margin-block-start: 4px; }
 
@@ -544,9 +544,9 @@ transition:1.5s ease}
 }
 
 .course-card:is(:hover, :focus-within) { border-color: var(--light-coral);
-background-color: rgb(175, 215, 250);
+background-color: rgb(219, 237, 252);
 margin:5px;
-transition:1.5s ease }
+transition:0.5s ease }
 
 .course-card .card-banner {
   height: 160px;
