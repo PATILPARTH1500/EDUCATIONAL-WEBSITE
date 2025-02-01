@@ -1,0 +1,10 @@
+This document is written by Parth Patil for understanding the code which is written by Parth Patil
+
+Website Theme
+1) This is an Educational website which offers various feature to showcase your educational course.
+
+2) The Pages included in the website to showcase your courses are Gallery Page, Course Page, About us Page, Blog Page and Placement Place too
+
+3) 
+
+
